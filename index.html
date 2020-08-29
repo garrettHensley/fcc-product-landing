@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header" class="container-fluid space-between">
+      <img id="header-img" src="./assets/logo.png" />
+      <nav id="nav-bar">
+        <div class="flex end align-center">
+          <h1>Random Product Page</h1>
+          <a class="nav-link" href="#video">Demonstration</a>
+          <a class="nav-link" href="#email">Email</a>
+          <a class="nav-link" href="#nav-bar">Top</a>
+        </div>
+      </nav>
+    </header>
+    <div id="main" class="container">
+      <h1 class="text-center">Product</h1>
+      <div class="flex justify-content-center">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/g3ygIj12Xy8"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <form
+          id="form"
+          class="text-center"
+          action="https://www.freecodecamp.com/email-submit"
+        >
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email for updates!"
+            required
+          />
+          <input id="submit" type="submit" class="btn" />
+        </form>
+      </div>
+    </div>
+    <script src="http://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
+<style>
+  .container {
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    border-radius: 0.2em;
+  }
+  .container-fluid {
+    margin: auto;
+    padding: 1em;
+    border-radius: 0.2em;
+  }
+  header {
+    height: 4em;
+  }
+  #header-img {
+    height: 100%;
+  }
+  #main {
+    margin-top: 1em;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav div {
+    height: 4em;
+  }
+  form {
+    margin-top: 1em;
+  }
+  input {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .nav-link {
+    font-size: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-decoration: none;
+    color: blue;
+    float: right;
+  }
+  .flex {
+    display: flex;
+  }
+  .end {
+    justify-content: flex-end;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+    }
+    #header-img {
+      display: none;
+    }
+  }
+</style>
